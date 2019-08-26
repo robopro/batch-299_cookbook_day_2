@@ -2,14 +2,12 @@
 # Number TWO (for now dun dun DUN . . .)
 require 'csv'
 require_relative 'recipe'
-require 'byebug'
 
 class Cookbook
   def initialize(csv_file_path)
     @csv_file_path = csv_file_path
     @recipes = []
     load_from_csv
-    byebug
   end
 
   def all
